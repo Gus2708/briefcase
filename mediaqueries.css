@@ -1,0 +1,592 @@
+@media (max-width: 375px) {
+    html{
+        font-size: 14px;
+    }
+
+    /* ------------ */
+    /* slide 1 */
+    /* ----------- */
+
+    .main .context{
+      
+    }
+
+    /* ------------ */
+    /* slide 2 */
+    /* ----------- */
+    
+    .title{
+        font-size: 3rem;
+    }
+
+    .aboutMe{
+        margin: 1.25em 1em 0 1em;
+    }
+    
+    .skills{
+        width: 100%;
+    }
+
+    .skills .skills-info {
+        justify-content: space-around;
+    }
+
+    .main{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        min-height: 100%;
+    }
+
+    .title{
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: auto;
+        order: 0;
+        text-align: center;
+        margin: 0;
+        margin-top: 6.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .author{
+        width: 100%;
+        margin-left: 30px;
+
+    }
+    .aboutMe{
+        height: max-content;
+        width: 90%;
+        margin: 1.25em 1em 0 1em;
+        margin-top: 1.5rem;
+        padding: 1.75rem 1rem;
+        line-height: 1.75rem;
+        vertical-align: top;
+        font-size: 1.25rem;
+
+    }
+
+    .skills{
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 80%;
+        justify-self: center;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        align-self: center;
+    }
+
+    .skills .skills-info {
+        padding: .75rem 1rem;
+        justify-content: space-between;
+    }
+
+    /* ------------ */
+    /* slide 3 */
+    /* ----------- */
+
+    .title3{
+        margin-top: 7rem;
+    }
+
+    .card-list{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    .card{
+        margin-bottom: 1rem;
+        height: max-content;
+        box-shadow: .15rem 0 1.5rem #1b1c1e10;
+    }
+
+    .card:hover{
+        transform: translateY(-.5rem);
+        box-shadow: .15rem 0 1.5rem #1b1c1e20;
+        
+    }
+    
+    .card:hover~.card{
+        transform: translateX(0);
+    }
+
+    .card .info{
+        width: 80%;
+        font-size: .85rem;
+    }
+
+    .card .footerCard{
+        position: relative;
+        bottom: 5px;
+    }
+
+    .card .footerCard .btnlink{
+        font-size: 1.15rem;
+    }
+
+    /* ------------ */
+    /* slide 4 */
+    /* ----------- */
+
+    .line{
+        width: 80%;
+    }
+
+    .contacts{
+        width: 80%;
+    }
+    
+    /* ------------ */
+    /* slide 5 */
+    /* ----------- */
+
+    .thanks{
+        bottom: 40%;
+    }
+
+    .thanks h3{
+        width:60%;
+    }
+
+    .backward{
+        display: none;
+    }
+
+    .footer{
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 420px){
+
+    /* ------------ */
+    /* slide 1 */
+    /* ----------- */
+
+    .main .context{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+
+    /* ------------ */
+    /* slide 5 */
+    /* ----------- */
+
+    .backward{
+        display: none;
+    }
+
+    .thanks{
+        bottom: 40%;
+    }
+
+    .thanks h3{
+        width:60%;
+    }
+
+    .footer{
+        text-align: center;
+        width: 100%;
+        margin-bottom: .5rem;
+        
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* ------------ */
+    /* slide 1 */
+    /* ----------- */
+
+    .main .context{
+        width: 80%;
+        height: max-content;
+        font-size: 1.35rem;
+        margin-top: 1rem;
+        text-align: left;
+        line-height: 2.25rem;
+        margin-right: 2rem;  
+    }
+
+    .svgbg{
+        display: none;
+    }
+
+    .main .content{
+        margin-right: 0;
+        width: 90%;
+    }
+    
+    .main .greeting{
+        margin: auto;
+        width: 12ch;
+        font-size: 2.90rem;
+        margin-top: 5.2rem;
+        margin-bottom: 1.5rem;
+    }
+    @keyframes typing {
+        75% {
+            width: 0ch;
+        }
+        100% {
+            width: 12ch;
+        }
+    }
+    
+    .button{
+        display: none;
+    }
+
+    /* ------------ */
+    /* slide 2 */
+    /* ----------- */
+
+    .svgbg{
+        display: none;
+    }
+    .main{
+       flex-direction: row;
+       justify-content: center;
+       align-content: center;
+       min-height: 100%;
+    }
+
+    .title{
+       width: 100%;
+       height: auto;
+       position: relative;
+       right: auto;
+       order: 0;
+       text-align: center;
+       margin: 0;
+       margin-top: 6.5rem;
+    }
+
+    .author{
+       width: 100%;
+       margin-left: 30px;
+
+    }
+    .aboutMe{
+       height: max-content;
+       width: 80%;
+       margin: auto;
+       margin-top: 1.5rem;
+       padding: 1.75rem 1rem;
+       line-height: 1.75rem;
+       vertical-align: top;
+       font-size: 1.25rem;
+
+    }
+
+    .skills{
+       position: relative;
+       bottom: auto;
+       right: auto;
+       width: 60%;
+       justify-self: center;
+       margin: auto;
+       margin-top: 1.5rem;
+       margin-bottom: 1.5rem;
+       align-self: center;
+    }
+
+    .skills .skills-info {
+       justify-content: space-around;
+    }
+
+    /* ------------ */
+    /* slide 3 */
+    /* ----------- */
+
+    .title3{
+        margin-top: 7rem;
+    }
+
+    .card-list{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin-top: 3rem;
+
+    }
+    .card{
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        margin-bottom: 2rem;
+        box-shadow: .15rem 0 1.5rem #1b1c1e10;
+    }
+
+    .card:hover{
+        transform: translateY(-.5rem);
+        box-shadow: .15rem 0 1.5rem #1b1c1e20;
+        
+    }
+    
+    .card:hover~.card{
+        transform: translateX(0);
+    }
+
+    .card header{
+        font-size: 1.75rem;
+    }
+
+    .card .info{
+        width: 80%;
+        font-size: 1.15rem;
+    }
+
+    .card .card-icon{
+        font-size: 5rem;
+    }
+
+    .card .footerCard{
+        position: relative;
+        bottom: 5px;
+    }
+    
+    .card .footerCard .btnlink{
+        font-size: 1.25rem;
+    }
+    /* ------------ */
+    /* slide 4 */
+    /* ----------- */
+
+    .line{
+        width: 75%;
+    }
+
+    .contacts{
+        width: 75%;
+    }
+
+    /* ------------ */
+    /* slide 5 */
+    /* ----------- */
+
+    .thanks h3{
+        width:40%
+    }
+
+    .thanks{
+        bottom: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ------------ */
+    /* slide 1 */
+    /* ----------- */
+
+    .main .context{
+        width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+
+    }
+
+    .main .context{
+        margin-top: 1.25rem;
+        width: 70%;
+    }
+    .button{
+        display: none;
+
+    }
+
+    /* ------------ */
+    /* slide 2 */
+    /* ----------- */
+
+    .svgbg{
+        display: none;
+   }
+   .main{
+       flex-direction: row;
+       justify-content: center;
+       align-content: center;
+       min-height: 100%;
+   }
+
+   .title{
+       width: 100%;
+       height: auto;
+       position: relative;
+       right: auto;
+       order: 0;
+       text-align: center;
+       margin: 0;
+       margin-top: 6.5rem;
+       margin-bottom: 1rem;
+   }
+
+   .author{
+       width: 100%;
+       margin-left: 60px;
+
+   }
+   .aboutMe{
+       height: max-content;
+       width: 80%;
+       margin: auto;
+       margin-top: 1.5rem;
+       padding: 1.75rem 1rem;
+       line-height: 1.85rem;
+       vertical-align: top;
+       font-size: 1.35rem;
+
+   }
+
+   .skills{
+       position: relative;
+       bottom: auto;
+       right: auto;
+       width: 60%;
+       justify-self: center;
+       margin: auto;
+       margin-top: 1.5rem;
+       margin-bottom: 1.5rem;
+       align-self: center;
+   }
+
+   .skills .skills-info {
+       justify-content: space-around;
+   }
+
+   /* ------------ */
+    /* slide 3 */
+    /* ----------- */
+
+    .title3{
+        margin-top: 7rem;
+    }
+
+    .card-list{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin-top: 3rem;
+
+    }
+    .card{
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        margin-bottom: 2rem;
+        box-shadow: .15rem 0 1.5rem #1b1c1e10;
+    }
+
+    .card:hover{
+        transform: translateY(-.5rem);
+        box-shadow: .15rem 0 1.5rem #1b1c1e20;
+        
+    }
+    
+    .card:hover~.card{
+        transform: translateX(0);
+    }
+
+    .card header{
+        font-size: 1.75rem;
+    }
+
+    .card .info{
+        width: 80%;
+        font-size: 1.15rem;
+    }
+
+    .card .card-icon{
+        font-size: 5rem;
+    }
+
+
+    .arrow{
+        display: none;
+    }
+
+    /* ------------ */
+    /* slide 4 */
+    /* ----------- */
+
+    .line{
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px){
+
+    /* ------------ */
+    /* slide 1 */
+    /* ----------- */
+
+    .main .greeting{
+        margin-top: 2.5rem;
+        font-size: 5.5rem;
+    }
+    .main .context{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .button{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .button i{
+        font-size: 1.25rem;
+    }
+
+    /* ------------ */
+    /* slide 2 */
+    /* ----------- */
+
+    .skills .skills-info{
+        justify-content: center;
+    }
+    .aboutMe{
+        line-height: 2rem;
+    }
+
+    /* ------------ */
+    /* slide 3 */
+    /* ----------- */
+
+    .card-list{
+        margin-top: 4rem;
+    }
+
+    .card .footerCard{
+        position: relative;
+        bottom: 5px;
+    }
+
+    /* ------------ */
+    /* slide 4 */
+    /* ----------- */
+
+    .line{
+        width: 50%;
+    }
+
+    /* ------------ */
+    /* slide 5 */
+    /* ----------- */
+
+    .thanks{
+        bottom: 45%;
+    }
+}
