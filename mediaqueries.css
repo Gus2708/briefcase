@@ -7,8 +7,11 @@
     /* slide 1 */
     /* ----------- */
 
-    .main .context{
-      
+    .main .greeting{
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     /* ------------ */
@@ -386,6 +389,13 @@
 
 @media (max-width: 768px) {
 
+    .svgbgmobile{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+    }
+
     /* ------------ */
     /* slide 1 */
     /* ----------- */
@@ -489,6 +499,9 @@
         box-shadow: .15rem 0 1.5rem #1b1c1e10;
     }
 
+    .card .footerCard{
+        margin-top: 4rem;
+    }
     .card:hover{
         transform: translateY(-.5rem);
         box-shadow: .15rem 0 1.5rem #1b1c1e20;
@@ -558,12 +571,17 @@
         justify-content: center;
     }
     .aboutMe{
-        line-height: 2rem;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        height: max-content;
     }
 
     /* ------------ */
     /* slide 3 */
     /* ----------- */
+    .card{
+        height: max-content;
+    }
 
     .card-list{
         margin-top: 4rem;
@@ -572,14 +590,24 @@
     .card .footerCard{
         position: relative;
         bottom: 5px;
+        margin-top: 2rem;
     }
 
     /* ------------ */
     /* slide 4 */
     /* ----------- */
 
+    .title4{
+        margin-left: 3.50rem;
+    }
+
     .line{
+        margin-left: 3.75rem;
         width: 50%;
+    }
+
+    .contacts{
+        margin-left: 3.75rem;
     }
 
     /* ------------ */

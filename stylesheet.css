@@ -103,6 +103,11 @@ body{
     margin-right: 0.30rem;
 }
 
+.ldbar path.mainline{
+    stroke-width: 10;
+    stroke: #EB347E;
+}
+
 /* main */
 
 .main{
@@ -143,7 +148,7 @@ body{
     height: max-content;
     font-size: 5rem;
     font-family: 'DM Mono', monospace;
-    color: #84BAD7; 
+    color: #6fbae2; 
    font-weight: 300;
     padding: 1.25rem 0;
     margin-left: 1.75rem;
@@ -405,7 +410,7 @@ body{
 .card-list{
     order: 2;
     display: flex;
-    width: 90%;
+    width: 88%;
     justify-content: center;
     margin: auto;
     margin-top: 2rem;
@@ -414,11 +419,11 @@ body{
 
 .card{
     color: #1b1c1e;
-    height: 288px;
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 18rem;
+    height: 19rem;
+    margin-right: -.7rem;
     padding: 1.5rem 1rem 1.5rem 1rem;
     border-radius: 16px;
     border: none;
@@ -429,11 +434,11 @@ body{
 }
 
 .card:hover{
-    transform: translateY(-1rem);
+    transform: translateY(-1.7rem);
 }
 
 .card:hover~.card{
-    transform: translateX(.70rem);
+    transform: translateX(1rem);
 }
 
 .card .card-icon{
@@ -457,7 +462,9 @@ body{
 .card .info{
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
-    
+    width: 90%;
+    height: 8rem;
+    line-height: 1.6rem;
 }
 
 .card .footerCard{
@@ -574,7 +581,7 @@ body{
 }
 
 .mail .btnmail:hover i{
-    color: #3fb6b6b0;
+    color: #48BEFF;
 }
 
 .mail .btnmail:focus{
@@ -585,7 +592,7 @@ body{
 
 .mail .btnmail .alert{
     display: inline-block;
-    color: #3fb6b6b0;
+    color: #48BEFF;
     font-size: .85rem;
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0;

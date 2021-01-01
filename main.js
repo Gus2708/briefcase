@@ -19,6 +19,17 @@ $(document).ready(function(){
          });
     });
 
+    $('.slide1 .button').click(function (e) {
+        $('.slide3').css({
+            transition: 'all .5s ease',
+            background: '#f4f4f4'
+        });
+
+        $('.slide4').css({
+            background: '#f4f4f4'
+        });
+    });
+
     $('#fullpage').fullpage({
 
 		//options here
@@ -41,6 +52,7 @@ $(document).ready(function(){
             mouseWheel: true,
             scrollbars: false
         },
+        
         // animations after slide load
         afterSlideLoad: function( section, origin, destination, direction){
             var loadedSlide = this;
@@ -301,19 +313,39 @@ $(document).ready(function(){
             if($('.slide2').hasClass('active')){
                 // main color change
                 $('.slide3.main').css({
-                transition: 'all 2s ease',
-                background: '#f4f4f4'
+                    transition: 'all 2s ease',
+                    background: '#f4f4f4'
                 });
 
             };
 
+            if($('.slide4').hasClass('active')){
+                // main color change
+                $('.slide3.main').css({
+                    background: '#f4f4f4'
+                });
+
+            };
+            //slide 3 to 4
             if($('.slide3').hasClass('active')){
                 // main color change
-                $('.slide4.main').css({
-                background: '#f4f4f4'
+                $('.slide4').css({
+                    background: '#f4f4f4'
                 });
 
             };
-        }        
+            
+            //slide 5 to 4
+            if($('.slide5').hasClass('active')){
+                // main color change
+                $('.slide4.main').css({
+                    transition: "all 2s ease",
+                    background: '#f4f4f4'
+                });
+
+            };
+        }                
     }); 
+
+    
 });
