@@ -1,6 +1,6 @@
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-      $('.preloader').fadeOut(1000, function () {
+      $('.preloader').fadeOut(2000, function () {
           $('.main .greeting').css({
             width: "12ch",
             animation: "typing 3s steps(12), blink 1s ease-in-out 3.5s infinite"
