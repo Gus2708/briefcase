@@ -79,36 +79,55 @@ body{
 .preloader p span{
     font-size: 1.55rem;
     margin-left: 3px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .preloader p .first{
-    animation-name: pointAnimation;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
+    animation: firstAnimation 2s infinite;
 }
 
 .preloader p .second{
-    animation-name: pointAnimation;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
+    animation: secondAnimation 2s infinite;
 }
 
 .preloader p .third{
-    animation-name: pointAnimation;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
+    animation: thirdAnimation 2s infinite;
 }
 
-@keyframes pointAnimation{
+@keyframes firstAnimation{
     0%{
         opacity: 0;
     }
 
+    25%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes secondAnimation{
+    0%,25%{
+        opacity: 0;
+    }
+
     50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes thirdAnimation{
+    0%,50%{
+        opacity: 0;
+    }
+
+    75%{
         opacity: 1;
     }
 
