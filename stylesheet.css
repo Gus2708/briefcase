@@ -6,10 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
-
 html{
     font-size: 16px;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -38,8 +38,6 @@ body{
     overflow: hidden;
 }
 
-
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -47,17 +45,105 @@ body{
     overflow: hidden;
   }
 
+/* preloader */
 
-      
- /* header */
+.preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #020e1c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 19999;
+    width: 100%;
+    height: 100%;
+}
 
+.preloader h4{
+    font-family: "DM Mono" sans-serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fefefee0;
+}
+
+.preloader p{
+    font-family: "DM Mono" sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fefefee0;
+    margin-top: 1.25rem;
+}
+
+.preloader p span{
+    font-size: 1.55rem;
+    margin-left: 3px;
+    opacity: 0;
+}
+
+.preloader p .first{
+    animation: firstAnimation 2s infinite;
+}
+
+.preloader p .second{
+    animation: secondAnimation 2s infinite;
+}
+
+.preloader p .third{
+    animation: thirdAnimation 2s infinite;
+}
+
+@keyframes firstAnimation{
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes secondAnimation{
+    0%,25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes thirdAnimation{
+    0%,50%{
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/* header */
 
 .header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem;
+    padding: 1.35rem 1.25rem;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -84,11 +170,12 @@ body{
 }
 
 .header .name{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.15rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 1.20rem;
     font-weight: 400;
     text-align: center;
     margin: auto;
+    margin-left: 10px;
     color: #fefefe;
 
 }
@@ -144,12 +231,12 @@ body{
 }
 
 .main .greeting{
-    width: 12ch;
+    width: 0ch;
     height: max-content;
     font-size: 5rem;
     font-family: 'DM Mono', monospace;
     color: #6fbae2; 
-   font-weight: 300;
+    font-weight: 300;
     padding: 1.25rem 0;
     margin-left: 1.75rem;
     margin-top: 4rem;
@@ -157,7 +244,7 @@ body{
     overflow: hidden;
     white-space: nowrap;
     z-index: 1;
-    animation: typing 3s steps(12), blink 1s ease-in-out 3.5s infinite;
+    
     border-right: 4px solid #fafafa;
 }
 
@@ -172,10 +259,10 @@ body{
 
 @keyframes blink {
     0% {
-     border-right: 4px solid rgba(255, 255, 255, 0);
+        border-right: 4px solid rgba(255, 255, 255, 0);
     }
     100% {
-     border-right: 4px solid rgb(194, 194, 194);
+        border-right: 4px solid rgb(194, 194, 194);
     }
 }
 
@@ -183,7 +270,7 @@ body{
 .main .context{
     display: flex;
     align-self: flex-start;
-    width: 50%;
+    width: 55%;
     padding-top: 1.25rem;
     margin-left: 2.25rem;
     color: #fafafa;
@@ -197,14 +284,13 @@ body{
     border-width: 14.5px 0 14.5px 10px;
 }
 
-
 .button{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 4.5rem;
     height: 4.5rem;
-    background: #05d8bf;
+    background: #11e9d0;
     border-radius: 50%;
     align-self: flex-end;
     position: absolute;
@@ -349,8 +435,6 @@ body{
     font-style: normal;
     font-family: 'Roboto Condensed', sans-serif;
     color: #fafafa85;
-
-
 }
 
 .skills .skills-info{
@@ -363,7 +447,6 @@ body{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    
 }
 
 .skills .skills-info li{
@@ -374,8 +457,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
-
-
 
 .skills .skills-info li i{
     margin-bottom: .30rem;
@@ -388,15 +469,14 @@ body{
     color: #dddddd;
 }
 
-
  /* section 3 */
 
- .slide3.main{
+.slide3.main{
     background: #020e1c;
     align-content: center;
- }
+}
 
- .title3{
+.title3{
     font-size: 2rem;
     order: 1;
     align-self: center;
@@ -501,7 +581,6 @@ body{
     padding: 0;
 }
 
-
  /* slide 4 */
 
  .svgbg4{
@@ -577,7 +656,6 @@ body{
     font-size: .85rem;
     color: #1b1c1e65;
     transition: color .2s;
-    
 }
 
 .mail .btnmail:hover i{
@@ -587,7 +665,6 @@ body{
 .mail .btnmail:focus{
     outline: none;
     box-shadow: none;
-   
 }
 
 .mail .btnmail .alert{
@@ -612,7 +689,6 @@ body{
     color: #1b1c1edc;
     margin-right: .25rem;
 }
-
 
 /* slide 5 */
 
