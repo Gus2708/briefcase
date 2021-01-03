@@ -231,7 +231,7 @@ body{
 }
 
 .main .greeting{
-    width: 12ch;
+    width: 0ch;
     height: max-content;
     font-size: 5rem;
     font-family: 'DM Mono', monospace;
@@ -244,7 +244,7 @@ body{
     overflow: hidden;
     white-space: nowrap;
     z-index: 1;
-    animation: typing 3s steps(12), blink 1s ease-in-out 3.5s infinite;
+    
     border-right: 4px solid #fafafa;
 }
 

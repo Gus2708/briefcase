@@ -1,17 +1,12 @@
-switch (document.readyState) {
-    case "loading":
-      // The document is still loading.
-      break;
-    case "interactive":
-      // the page still loading
-      break;
-    case "complete":
-      // The page is fully loaded.
-      $('.preloader').css({
-          transition: '.5s',
-          display: 'none'
-      })
-      break;
+document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+      $('.preloader').fadeOut(1000, function () {
+          $('.main .greeting').css({
+            width: "12ch",
+            animation: "typing 3s steps(12), blink 1s ease-in-out 3.5s infinite"
+          });
+      });
+    }
   }
 
 $(document).ready(function(){
