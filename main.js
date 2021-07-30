@@ -1,10 +1,6 @@
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-<<<<<<< HEAD
       $('.preloader').fadeOut(1000, function () {
-=======
-      $('.preloader').fadeOut(2000, function () {
->>>>>>> gh-pages
           $('.main .greeting').css({
             width: "12ch",
             animation: "typing 3s steps(12), blink 1s ease-in-out 3.5s infinite"
