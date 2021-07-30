@@ -568,7 +568,7 @@
     /* ----------- */
 
     .skills .skills-info{
-        justify-content: center;
+        justify-content: flex-start;
     }
     .aboutMe{
         font-size: 1.3rem;

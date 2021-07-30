@@ -469,8 +469,10 @@ body{
     padding: 0 .70rem;
     list-style: none;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    
 }
 
 .skills .skills-info li{
@@ -480,6 +482,7 @@ body{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .skills .skills-info li i{
@@ -556,6 +559,14 @@ body{
     position: absolute;
     left: -8.5px;
     top: -12.5px;
+}
+
+.card .github-icon{
+    font-size: 1.8em;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #020e1c;
 }
 
 .card header{
