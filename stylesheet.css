@@ -274,8 +274,6 @@ body{
 
 
 .main .context{
-    display: flex;
-    align-self: flex-start;
     width: 55%;
     padding-top: 1.25rem;
     margin-left: 2.25rem;
@@ -283,8 +281,27 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.15rem;
     line-height: 2rem;
-
+    text-align: start;
 }
+
+.main .context i{
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    text-shadow: -1.7px -1.7px 0 #6fbae2, 1.7px 1.7px 0 #EB347E;
+    font-style: normal;
+    pointer-events: none;
+    animation: animate 0.130s linear infinite;
+}
+
+@keyframes animate {
+   0%, 100%{
+    text-shadow: -1.7px -1.7px 0 #6fbae2, 1.7px 1.7px 0 #EB347E;
+   }
+
+   50%{
+    text-shadow: -2.1px -1.9px 0 #6fbae2, 2.1px 1.9px 0 #EB347E;
+   }
+  }
 
 .fp-controlArrow.fp-next{
     border-width: 14.5px 0 14.5px 10px;
@@ -393,7 +410,6 @@ body{
 
 .aboutMe{
     width: 40%;
-    height: 17.5rem;
     border-radius: 0.75rem;
     background: linear-gradient(to right bottom, rgba(255, 250, 250, 0.1), rgba(255, 247, 257, 0.05));
     font-family: 'Roboto', sans-serif;
@@ -404,7 +420,7 @@ body{
     margin-top: 1.25rem;
     margin-left: 5rem;
     box-shadow: 0 0.250rem 0.500rem 0 rgb(0 0 0 / 20%);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(8px);
 }
 
 .aboutMe .hi{
@@ -421,7 +437,7 @@ body{
     display: flex;
     width: 22rem;
     height: 13rem;
-    background: linear-gradient(to right bottom, rgba(255, 250, 250, 0.07), rgba(255, 247, 257, 0.035));
+    background: linear-gradient(to right bottom, rgba(255, 250, 250, 0.08), rgba(255, 247, 257, 0.04));
     border-radius: .75rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -434,6 +450,7 @@ body{
     bottom: 2.5rem;
     flex-direction: column;
     align-items: center;
+    backdrop-filter: blur(3px);
 }
 
 .skills .skills-title{
@@ -461,7 +478,7 @@ body{
     margin: 0 1.25rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -510,6 +527,7 @@ body{
     position: relative;
     flex-direction: column;
     height: max-content;
+    max-height: 400px;
     margin-right: -.9rem;
     padding: 1.5rem 1rem 1.5rem 1rem;
     border-radius: 16px;
@@ -549,11 +567,11 @@ body{
 
 .card .info{
     position: relative;
-    font-size: 1rem;
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     width: 90%;
     height: 60%;
-    line-height: 1.7rem;
+    line-height: 1.7em;
 }
 
 .card .footerCard{

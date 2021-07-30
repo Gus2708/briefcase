@@ -50,7 +50,7 @@ $(document).ready(function(){
         verticalCentered: true,
         easing: 'easeInOutCubic',
         easingcss3: 'ease-out',
-        anchors:['section1'],
+        anchors:['section'],
         fixedElements: '#header, .arrow',
         scrollHorizontally: false,
         loopHorizontal: false,
